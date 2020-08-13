@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './app.less';
 import { Route, BrowserRouter } from "react-router-dom";
 import Home from "./Home";
+import Calculator from './calculator';
 
 class App extends Component {
   render() {
@@ -9,7 +10,7 @@ class App extends Component {
       <div className="app">
         <BrowserRouter>
           <Route exact path='/' component={Home} />
-          <Route exact path='/calculator' component={Home} />
+          <Route exact path='/calculator' component={Calculator} />
           <Route exact path='/timer' component={Home} />
         </BrowserRouter>
       </div>
